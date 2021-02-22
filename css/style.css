@@ -1,34 +1,41 @@
 /* UNIVERSALS */
-body, html {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+body,
+html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 html {
-    background-color: #F7DA4D;
+  background-color: #f7da4d;
 }
 
-main, aside {
-    font-size: 1.5em;
+main,
+aside {
+  font-size: 1.5em;
 }
 
 a {
-    color: #333;
-    font-weight: bold;
+  color: #333;
+  font-weight: bold;
 }
 
 a:hover {
-    text-decoration: none;
-    color: #A52F23;
+  text-decoration: none;
+  color: #a52f23;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #A52F23;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #a52f23;
 }
 
 p {
@@ -36,8 +43,11 @@ p {
 }
 
 .points {
-    list-style: none;
-    font-size: 1.25em;
+  list-style: none;
+  font-size: 1.25em;
+}
+.underline {
+  text-decoration: underline;
 }
 
 ol {
@@ -50,15 +60,15 @@ ol {
 }
 
 .bulleted-points {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
 .dashed-list {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .text-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .padtop3 {
@@ -66,98 +76,99 @@ ol {
 }
 
 pre {
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    align-items: center;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .highlight-circle {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 1px solid #A52F23;
-    animation: fade-in infinite 3s;
-    padding-left: 4px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #a52f23;
+  animation: fade-in infinite 3s;
+  padding-left: 4px;
 }
 
 .highlight-block {
-    background-color: yellow;
-    color: #A52F23;
-    animation: fade-in infinite 3s;
+  background-color: yellow;
+  color: #a52f23;
+  animation: fade-in infinite 3s;
 }
 
-.container, .container-fluid {
-    padding-bottom: 160px;
-    min-height: 110vh;
+.container,
+.container-fluid {
+  padding-bottom: 160px;
+  min-height: 110vh;
 }
 /* JS HELPERS */
 .header-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    animation: roll-down .2s ease-in;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: roll-down 0.2s ease-in;
+  z-index: 10;
 }
 
 .header-relative {
-    position: relative;
-    animation: fade-in .4s ease-in;
+  position: relative;
+  animation: fade-in 0.4s ease-in;
 }
 
 .js-link {
-    font-weight: bold
+  font-weight: bold;
 }
 
 .js-link:hover {
-    cursor: pointer;
-    color: #A52F23;
+  cursor: pointer;
+  color: #a52f23;
 }
 
 /* HEADER */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #eee;
-    padding: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 0.5em;
 }
 
 .logo {
-    margin-left: 5em;
-    background-color: #F7DA4D;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    animation: color-swirl 2s ease-in-out;
+  margin-left: 5em;
+  background-color: #f7da4d;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  animation: color-swirl 2s ease-in-out;
 }
 
 .logo a {
-    font-size: 1.75em;
-    color: #fff;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 1.75em;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .navbar-default {
-    background-color: #eee;
-    border: none;
+  background-color: #eee;
+  border: none;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #A52F23;
+  color: #a52f23;
 }
 
 /* MAIN STYLES */
@@ -165,30 +176,31 @@ header {
   margin-bottom: 1.5em;
 }
 
-.section main, .section aside{
-    margin-top: 2em;
+.section main,
+.section aside {
+  margin-top: 2em;
 }
 
 aside {
-    color: #A52F23;
-    text-align: center;
+  color: #a52f23;
+  text-align: center;
 }
 
 aside h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .section aside {
-    animation: from-top 1.5s ease-in-out;
+  animation: from-top 1.5s ease-in-out;
 }
 
 .section main {
-    animation: from-right 1.5s ease-in-out;
+  animation: from-right 1.5s ease-in-out;
 }
 
 .title {
-    animation: fade-in 2s ease-in-out;
-    margin-top: 1em;
+  animation: fade-in 2s ease-in-out;
+  margin-top: 1em;
 }
 
 .fade-1 {
@@ -218,62 +230,62 @@ aside h2 {
 
 /* TAKE HOME */
 .take-home ul li a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* ANIMATIONS */
 @keyframes from-top {
-    from {
-        opacity: 0;
-        position: relative;
-        top: -200px;
-        color: #eee;
-    }
+  from {
+    opacity: 0;
+    position: relative;
+    top: -200px;
+    color: #eee;
+  }
 
-    to {
-        opacity: 1;
-        position: relative;
-        top: 0;
-    }
+  to {
+    opacity: 1;
+    position: relative;
+    top: 0;
+  }
 }
 
 @keyframes from-right {
-    from {
-        opacity: .5;
-        right: -2000px;
-    }
+  from {
+    opacity: 0.5;
+    right: -2000px;
+  }
 
-    to {
-        opacity: 1;
-        right: 0;
-    }
+  to {
+    opacity: 1;
+    right: 0;
+  }
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes color-swirl {
-    from {
-        background-color: #FFFFFF;
-        transform: rotate(0deg);
-    }
-    to {
-        background-color: #F7DA4D;
-        transform: rotate(360deg);
-    }
+  from {
+    background-color: #ffffff;
+    transform: rotate(0deg);
+  }
+  to {
+    background-color: #f7da4d;
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes roll-down {
-    from {
-        transform: translateY(-85px);
-    }
-    to {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(-85px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
